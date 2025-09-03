@@ -3373,6 +3373,9 @@ atof
 atoi
 atol
 atoll
+backtrace
+backtrace_symbols
+backtrace_symbols_fd
 basename
 bind
 blkcnt_t

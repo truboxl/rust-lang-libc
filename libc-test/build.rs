@@ -1801,6 +1801,7 @@ fn test_android(target: &str) {
                "dlfcn.h",
                "elf.h",
                "errno.h",
+               "execinfo.h",
                "fcntl.h",
                "fnmatch.h",
                "getopt.h",

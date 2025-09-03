@@ -3969,6 +3969,11 @@ extern "C" {
         data: *mut c_void,
     ) -> c_int;
 
+    /// Only available in API Version 33+
+    pub fn backtrace(buf: *mut *mut c_void, sz: c_int) -> c_int;
+    pub fn backtrace_symbols(buffer: *const *mut c_void, len: c_int) -> *mut *mut c_char;
+    pub fn backtrace_symbols_fd(buffer: *const *mut c_void, len: c_int, fd: c_int);
+
     pub fn arc4random() -> u32;
     pub fn arc4random_uniform(__upper_bound: u32) -> u32;
     pub fn arc4random_buf(__buf: *mut c_void, __n: size_t);
